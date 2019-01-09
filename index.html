@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mandala</title>
+    <meta charset="utf-8">   
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, minimal-ui, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="A game that lets you meditate and resonate with the eye of your mind! Connecting mathematics, social sciences and consciousness studies... deeply hidden in our brain, at the tiniest scale, our third eye resonates with the higher dimensions of existence. It’s our gateway to the Cosmos.">
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <meta name="keywords" content="mandala, third eye, online game, real-time, music maker, interactive, three.js, lostconversation, sarc:o, animation">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- <div id="Stats-output" style="display:none"></div>	 -->
+    <div style="margin: 0; position: absolute;">
+
+        <div id="container" style="margin: 0; position: absolute;"></div>
+        <div id="black"></div>
+        <div id="backup"></div>
+        <div id="infoPage">
+            <div id="infoPageTitle" style="font-size:50px; letter-spacing: 1px">MANDALA</div>
+            <div id="infoPageSubTitle" style="font-size:14px; letter-spacing: 1px">THE EYE OF THE MIND</div><br>
+            <div id="infoPageDescr" style="font-size:14px">
+            Deeply hidden in our brain, at the tiniest scale,<br>
+            our third eye resonates with the higher dimensions of existence. It’s our gateway to the Cosmos.<br>
+            Music and repetition enables us to focus on this state of being,
+            and the MANDALA of our mind is drawn: in looping, endless and ever-changing shapes.<br><br>
+            Connecting mathematics, social sciences and consciousness studies,<br>this game lets you meditate and resonate with the eye of your mind!<br><br>
+            For desktop, tablet and smartphones.<br>A sound based interactive experience.<br><br>
+            Created by <a href="https://lostconversation.com" target="_blank">Marco Bagni</a> - Audio <a href="http://iamsarco.com" target="_blank">Sarc:o</a><br>A <a href="https://worthknowing.org" target="_blank">Worth Knowing</a> production
+            <br><br><br></div>
+            <iframe id="lastRow" src="shareFrame.html"></iframe>
+        </div>
+        
+        <div id="streamBar">
+            <div id="streaming"><div id="myBar"></div></div>
+        </div>
+
+
+        <div id="audioPlayer">
+            <button id="infoBtn" onclick="infoBegin()">INFO</button>
+            <!-- <img class="soundIco" src="img/sound.svg" id="s1" ></img> 
+            <img class="soundIco" src="img/sound_no.svg" id="s0" onclick="playMute()"></img>   -->
+            <img id="icoPlayPause" src="img/ico_pause.svg" onclick="playPause()" ></img>  
+        </div>
+
+        <div id="checkText" class="test">check</div>
+
+
+
+        
+        <!-- <img id="btnHover" src="img/circle.svg"></img>  -->
+        <img id="btnPlay" src="img/play.svg" onclick="startApp()"></img> 
+        <button id="loading" class="blink_me">INITIALIZING</button>
+        <iframe id="lastRow2" src="shareFrame.html"></iframe>
+        <button id="infoBegin" onclick="infoBegin()" style="opacity: 0; font-size: 12px;">INFO</button>
+        
+
+    </div>
+
+    <div id="follower">
+        <div id="circle1"></div>
+    </div>
+
+    <!-- <script src="js/sound.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/three.min.js"></script>
+    <script src="js/TrackballControls.js"></script>
+    <script src="js/DeviceOrientationControls.js"></script>
+    <script src="js/stats.min.js"></script>
+    <!-- <script src="js/dat.gui.min.js"></script> -->
+    <script src="js/postprocessing/EffectComposer.js"></script>
+    <script src="js/postprocessing/RenderPass.js"></script>
+    <script src="js/postprocessing/ShaderPass.js"></script>
+    <script src="js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="js/postprocessing/FilmPass.js"></script>
+    <script src="js/shaders/FilmShader.js"></script>
+    <script src="js/shaders/CopyShader.js"></script>
+    <script src="js/shaders/VignetteShader.js"></script>
+    <script src="js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="js/interaction.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+</body>
+</html>
+
